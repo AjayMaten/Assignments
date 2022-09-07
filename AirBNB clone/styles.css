@@ -1,162 +1,212 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-*{
+
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-body{
+
+body {
     margin: 0 100px;
 }
 
 /* navigation */
-.navigation{
-    margin:15px 0;
-}
-.logo-name{
-    font-weight: 900;
-    font-size: 2rem;
-    
+.navigation {
+    margin: 15px 0;
 }
 
-.star, .logo{
-    color:#F55353
+.logo-name {
+    font-weight: 900;
+    font-size: 2rem;
+
+}
+
+.star,
+.logo {
+    color: #F55353
 }
 
 /* heading bar */
-header{
+header {
     font-weight: 700;
     font-size: 1.5rem;
     margin: 15px 0 10px 0;
 }
 
-.rating-info>a{
+.rating-info>a {
     font-size: 1.2rem;
-    color:#9A9483
+    color: #9A9483
 }
-.rating-info>span{
+
+.rating-info>span {
     font-size: 1.2rem;
 }
-.share-info>span{
+
+.share-info>span {
     font-size: 1.3rem;
-    margin:0 8px;
+    margin: 0 8px;
 }
-.rating-info{
+
+.rating-info {
     margin-bottom: 15px;
     display: inline-block;
 }
-.share-info{
-    float:right;
+
+.share-info {
+    float: right;
 }
 
 /* image styling */
-.image-layout{
+.image-layout {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /*grid-template-areas: 
     'image1 image1 image2 image3'
     'image1 image1 image4 image5'; */
-    grid-gap:10px;
+    grid-gap: 10px;
     border-radius: 15%;
-    
-    
 }
-img{
+
+img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    }
-.one{
-    grid-column: 1/3;
-    grid-row: 1/3;
-    height:410px;
+
 }
 
-.two{
+.image-box1 {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.one {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    height: 410px;
+
+}
+
+.two {
     grid-column: 3/4;
     grid-row: 1/2;
-    height:200px;
+    height: 200px;
 }
-.three{
+
+.three {
     grid-column: 4/5;
     grid-row: 1/2;
-    height:200px;
+    height: 200px;
 }
-.four{
+
+.four {
     grid-column: 3/4;
     grid-row: 2/3;
-    height:200px;
+    height: 200px;
 }
-.five{
+
+.five {
     grid-column: 4/5;
     grid-row: 2/3;
-    height:200px;
+    height: 200px;
+}
+
+
+/* felx wrapper2 */
+
+.wrapper2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.wrapper1{
+    width:50%;
+}
+
+.sticky{
+    display: flex;
+    justify-content: center;
+    width:50%;
+}
+.booking-button{
+    border: 2px solid black;
+    position:sticky;
+    top: 40rem;    
 }
 
 /* info styling */
 
-.brief-info{
-    margin-top:50px;
+.brief-info {
+    margin-top: 50px;
 }
 
-.brief-info>h2{
+.brief-info>h2 {
     font-size: 1.7rem;
 }
-.brief-info>p{
+
+.brief-info>p {
     font-size: 1.4rem;
     margin: 8px 0 15px;
     opacity: 0.8;
 }
 
-.brief-info1{
-    margin:25px 0;
+.brief-info1 {
+    margin: 25px 0;
 }
-.highlights{
-    margin:15px 0;
+
+.highlights {
+    margin: 15px 0;
 }
 
 /* brief-info1 */
-.highlights>p{
+.highlights>p {
     margin-bottom: 15px;
     font-size: 1.3rem;
     opacity: 0.8;
-    
+
 }
-.highlights>h3{
+
+.highlights>h3 {
     font-size: 1.3rem;
     margin-bottom: 8px;
 }
 
 /* detail-info */
-.detail-info>div{
+
+.detail-info>div {
     font-size: 1.2rem;
     margin: 15px 0;
-    opacity:0.8;
+    opacity: 0.8;
 }
-.detail-info>p{
+
+.detail-info>p {
     font-size: 1.2rem;
     margin: 15px 0;
-    opacity:0.8;
+    opacity: 0.8;
 }
-.detail-info>a{
+
+.detail-info>a {
     margin-bottom: 15px;
 }
+
 /* hotel-amenity */
 
-.hotel-amenity{
-    margin:25px 0;
+.hotel-amenity {
+    margin: 25px 0;
 }
 
-.hotel-amenity>h2{
+.hotel-amenity>h2 {
     font-size: 1.7rem;
 }
 
-.amenities{
+.amenities {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 50%;
 }
-.amenity{
+
+.amenity {
     margin: 15px 0;
     font-size: 1.3rem;
     opacity: 0.8;
